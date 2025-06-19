@@ -100,7 +100,7 @@ ai_ml_api_models = {
     # Default
     "aimlapi": partial(
         AIMLAPI,
-        model_name="gpt-4-turbo",
+        model="gpt-4-turbo",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -108,55 +108,55 @@ ai_ml_api_models = {
     # OpenAI
     "aimlapi_gpt_4o": partial(
         AIMLAPI,
-        model_name="openai/gpt-4o",
+        model="openai/gpt-4o",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_gpt_4o_mini": partial(
         AIMLAPI,
-        model_name="gpt-4o-mini",
+        model="gpt-4o-mini",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_gpt_4": partial(
         AIMLAPI,
-        model_name="gpt-4",
+        model="gpt-4",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_gpt_3_5_turbo": partial(
         AIMLAPI,
-        model_name="gpt-3.5-turbo",
+        model="gpt-3.5-turbo",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_gpt_3_5_turbo_instruct": partial(
         AIMLAPI,
-        model_name="gpt-3.5-turbo-instruct",
+        model="gpt-3.5-turbo-instruct",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_o1": partial(
         AIMLAPI,
-        model_name="o1",
+        model="o1",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_o1_mini": partial(
         AIMLAPI,
-        model_name="o1-mini",
+        model="o1-mini",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_o3_mini": partial(
         AIMLAPI,
-        model_name="o3-mini",
+        model="o3-mini",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_text_embedding_3_large": partial(
         AIMLAPI,
-        model_name="text-embedding-3-large",
+        model="text-embedding-3-large",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -164,37 +164,37 @@ ai_ml_api_models = {
     # Meta
     "aimlapi_llama_3_3_70b": partial(
         AIMLAPI,
-        model_name="meta-llama/Llama-3.3-70B-Instruct-Turbo",
+        model="meta-llama/Llama-3.3-70B-Instruct-Turbo",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_llama_3_2_3b": partial(
         AIMLAPI,
-        model_name="meta-llama/Llama-3.2-3B-Instruct-Turbo",
+        model="meta-llama/Llama-3.2-3B-Instruct-Turbo",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_llama_3_8b_lite": partial(
         AIMLAPI,
-        model_name="meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+        model="meta-llama/Meta-Llama-3-8B-Instruct-Lite",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_llama_3_8b_chat_hf": partial(
         AIMLAPI,
-        model_name="meta-llama/Llama-3-8b-chat-hf",
+        model="meta-llama/Llama-3-8b-chat-hf",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_llama_3_1_8b": partial(
         AIMLAPI,
-        model_name="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+        model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_llama_guard_3_8b": partial(
         AIMLAPI,
-        model_name="meta-llama/Meta-Llama-Guard-3-8B",
+        model="meta-llama/Meta-Llama-Guard-3-8B",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -202,31 +202,31 @@ ai_ml_api_models = {
     # Google
     "aimlapi_gemma_2_27b": partial(
         AIMLAPI,
-        model_name="google/gemma-2-27b-it",
+        model="google/gemma-2-27b-it",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_gemini_1_5_flash": partial(
         AIMLAPI,
-        model_name="google/gemini-1.5-flash",
+        model="google/gemini-1.5-flash",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_gemini_1_5_pro": partial(
         AIMLAPI,
-        model_name="google/gemini-1.5-pro",
+        model="google/gemini-1.5-pro",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_textembedding_gecko": partial(
         AIMLAPI,
-        model_name="textembedding-gecko-multilingual@001",
+        model="textembedding-gecko-multilingual@001",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_text_multilingual_emb_002": partial(
         AIMLAPI,
-        model_name="text-multilingual-embedding-002",
+        model="text-multilingual-embedding-002",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -234,19 +234,19 @@ ai_ml_api_models = {
     # Mistral
     "aimlapi_mixtral_8x22b": partial(
         AIMLAPI,
-        model_name="mistralai/Mixtral-8x22B-Instruct-v0.1",
+        model="mistralai/Mixtral-8x22B-Instruct-v0.1",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_mistral_7b": partial(
         AIMLAPI,
-        model_name="mistralai/Mistral-7B-Instruct-v0.3",
+        model="mistralai/Mistral-7B-Instruct-v0.3",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_mistral_tiny": partial(
         AIMLAPI,
-        model_name="mistralai/mistral-tiny",
+        model="mistralai/mistral-tiny",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -254,7 +254,7 @@ ai_ml_api_models = {
     # Qwen
     "aimlapi_qwen_2_5_7b": partial(
         AIMLAPI,
-        model_name="Qwen/Qwen2.5-7B-Instruct-Turbo",
+        model="Qwen/Qwen2.5-7B-Instruct-Turbo",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -262,19 +262,19 @@ ai_ml_api_models = {
     # Anthropic
     "aimlapi_claude_3_haiku": partial(
         AIMLAPI,
-        model_name="claude-3-haiku-20240307",
+        model="claude-3-haiku-20240307",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_claude_3_5_sonnet_0620": partial(
         AIMLAPI,
-        model_name="claude-3-5-sonnet-20240620",
+        model="claude-3-5-sonnet-20240620",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_claude_3_5_sonnet_1022": partial(
         AIMLAPI,
-        model_name="claude-3-5-sonnet-20241022",
+        model="claude-3-5-sonnet-20241022",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -282,19 +282,19 @@ ai_ml_api_models = {
     # DeepSeek
     "aimlapi_deepseek_v3": partial(
         AIMLAPI,
-        model_name="deepseek-chat",
+        model="deepseek-chat",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_deepseek_r1": partial(
         AIMLAPI,
-        model_name="deepseek-reasoner",
+        model="deepseek-reasoner",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_deepseek_prover_v2": partial(
         AIMLAPI,
-        model_name="deepseek/deepseek-prover-v2",
+        model="deepseek/deepseek-prover-v2",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
@@ -302,19 +302,19 @@ ai_ml_api_models = {
     # X AI
     "aimlapi_grok_beta": partial(
         AIMLAPI,
-        model_name="x-ai/grok-beta",
+        model="x-ai/grok-beta",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_grok_3_beta": partial(
         AIMLAPI,
-        model_name="x-ai/grok-3-beta",
+        model="x-ai/grok-3-beta",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
     "aimlapi_grok_3_mini_beta": partial(
         AIMLAPI,
-        model_name="x-ai/grok-3-mini-beta",
+        model="x-ai/grok-3-mini-beta",
         root=AIMLAPI_ROOT,
         temperature=0,
     ),
